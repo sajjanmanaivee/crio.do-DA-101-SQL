@@ -1,0 +1,24 @@
+session 10 
+query 01]
+
+Problem Description
+You are tasked with fetching all flight details along with the associated airplane information. The query should return the flight number, departure time, arrival time, departure airport, arrival airport, status, and airplane details including the model and seating capacity.
+
+Task
+Write a query to return all flights with their associated airplane details:
+Fetch the flight number, departure time, arrival time, departure airport, arrival airport, and status.
+Include the airplane details such as model and seating capacity.
+
+query
+select 
+      flight_number, 
+      departure_time, 
+      arrival_time, 
+      departure_airport, 
+      arrival_airport, 
+      status, 
+      model, 
+      seating_capacity
+from Flights f
+inner join Airplanes a
+on f.airplane_id = a.airplane_id 
