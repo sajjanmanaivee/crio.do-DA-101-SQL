@@ -1,0 +1,17 @@
+Task
+Write a query to return all flights that have the status "Delayed":
+Fetch the flight number, departure time, arrival time, departure airport, arrival airport, and status.
+Only include flights with the status "Delayed".
+
+query
+
+
+select 
+    flight_number, 
+    departure_time, 
+    arrival_time, 
+    departure_airport, 
+    arrival_airport, status
+from Flights 
+where status = 'Delayed'
+
